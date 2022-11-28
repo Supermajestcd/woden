@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ErrorReporter (Woden - dist API)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ErrorReporter (Woden - dist API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ErrorReporter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../org/apache/woden/SerializationStrategy.html" title="interface in org.apache.woden"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?org/apache/woden/ErrorReporter.html" target="_top">Frames</a></li>
+<li><a href="ErrorReporter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.woden</div>
+<h2 title="Interface ErrorReporter" class="title">Interface ErrorReporter</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public interface <span class="strong">ErrorReporter</span></pre>
+<div class="block">Defines the approach for reporting errors that occur while parsing, 
+ validating or
+ manipulating WSDL descriptions, such as XML parser errors or violations
+ of the rules defined in the WSDL specification. That is, errors that
+ relate specifically to the WSDL. It does not report system runtime 
+ or configuration errors, which are instead treated as exceptions.
+ <p>
+ There are four ways to report an error:
+ <p>
+ An error id and an array of message arguments are used to produce 
+ a formatted error message from some parameterized message text.
+ The error may be reported with an target exception or without one.
+ <p>
+ An error id is specified with some ready-formatted message text.
+ The error may be reported with an target exception or without one.
+ <p>
+ The error is handled according to the severity level 
+ (warning, error or fatal error) reported with the error.
+ <p/>
+ The error reporter supports the 'en' (English) locale by default 
+ and has a default error handler (i.e. a default implementation of 
+ ErrorHandler). However, a different locale may be configured 
+ via <code>setLocale</code> and a custom error handler implementation 
+ may be configured as a system property.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>jkaputin@apache.org</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#SEVERITY_ERROR">SEVERITY_ERROR</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#SEVERITY_FATAL_ERROR">SEVERITY_FATAL_ERROR</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#SEVERITY_WARNING">SEVERITY_WARNING</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/apache/woden/ErrorHandler.html" title="interface in org.apache.woden">ErrorHandler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#getErrorHandler()">getErrorHandler</a></strong>()</code>
+<div class="block">Return the custom error handler if one has been set,  
+ otherwise return the default error handler.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#getFormattedMessage(java.lang.String, java.lang.Object[])">getFormattedMessage</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+                   <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;arguments)</code>
+<div class="block">Returns a formatted message string for the specified message key and arguments.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a></code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#getLocale()">getLocale</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.Object[], short)">reportError</a></strong>(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;arguments,
+           short&nbsp;severity)</code>
+<div class="block">Insert the message arguments into a parameterized message identified 
+ by errorId to produce a formatted error message, then report the 
+ message and the error location in the document according to the 
+ severity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.Object[], short, java.lang.Exception)">reportError</a></strong>(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;arguments,
+           short&nbsp;severity,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;exception)</code>
+<div class="block">Insert the message arguments into a parameterized message identified 
+ by errorId to produce a formatted error message, then report the 
+ message and the error location in the document according to the 
+ severity.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.String, short)">reportError</a></strong>(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+           short&nbsp;severity)</code>
+<div class="block">Report the message and the error location in the document according 
+ to the severity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.String, short, java.lang.Exception)">reportError</a></strong>(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+           short&nbsp;severity,
+           <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;exception)</code>
+<div class="block">Report the message and the error location in the document according 
+ to the severity.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#setErrorHandler(org.apache.woden.ErrorHandler)">setErrorHandler</a></strong>(<a href="../../../org/apache/woden/ErrorHandler.html" title="interface in org.apache.woden">ErrorHandler</a>&nbsp;errorHandler)</code>
+<div class="block">Set a custom error handler on this error reporter to replace the
+ default error handler.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../org/apache/woden/ErrorReporter.html#setLocale(java.util.Locale)">setLocale</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Set the Locale used for localization of error messages.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="SEVERITY_WARNING">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SEVERITY_WARNING</h4>
+<pre>static final&nbsp;short SEVERITY_WARNING</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#org.apache.woden.ErrorReporter.SEVERITY_WARNING">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="SEVERITY_ERROR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SEVERITY_ERROR</h4>
+<pre>static final&nbsp;short SEVERITY_ERROR</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#org.apache.woden.ErrorReporter.SEVERITY_ERROR">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="SEVERITY_FATAL_ERROR">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SEVERITY_FATAL_ERROR</h4>
+<pre>static final&nbsp;short SEVERITY_FATAL_ERROR</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#org.apache.woden.ErrorReporter.SEVERITY_FATAL_ERROR">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.Object[], short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reportError</h4>
+<pre>void&nbsp;reportError(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;arguments,
+               short&nbsp;severity)
+                 throws <a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Insert the message arguments into a parameterized message identified 
+ by errorId to produce a formatted error message, then report the 
+ message and the error location in the document according to the 
+ severity.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>errLoc</code> - ErrorLocator showing the location of the error in the document.</dd><dd><code>errorId</code> - String that identifies the message for this error.</dd><dd><code>arguments</code> - Object[] with values to be inserted into the message text.</dd><dd><code>severity</code> - a short indicating warning, error or fatal error.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code> - if the severity is fatal error</dd></dl>
+</li>
+</ul>
+<a name="reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.Object[], short, java.lang.Exception)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reportError</h4>
+<pre>void&nbsp;reportError(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;arguments,
+               short&nbsp;severity,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;exception)
+                 throws <a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Insert the message arguments into a parameterized message identified 
+ by errorId to produce a formatted error message, then report the 
+ message and the error location in the document according to the 
+ severity. Also report the exception that caused this error.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>errLoc</code> - ErrorLocator showing the location of the error in the document.</dd><dd><code>errorId</code> - String that identifies the message for this error.</dd><dd><code>arguments</code> - Object[] with values to be inserted into the message text.</dd><dd><code>severity</code> - a short indicating warning, error or fatal error.</dd><dd><code>exception</code> - the Exception that caused this error</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code> - if the severity is fatal error</dd></dl>
+</li>
+</ul>
+<a name="reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.String, short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reportError</h4>
+<pre>void&nbsp;reportError(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+               short&nbsp;severity)
+                 throws <a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Report the message and the error location in the document according 
+ to the severity.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>errLoc</code> - ErrorLocator showing the location of the error in the document.</dd><dd><code>errorId</code> - String that identifies the message for this error.</dd><dd><code>message</code> - message text.</dd><dd><code>severity</code> - a short indicating warning, error or fatal error.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code> - if the severity is fatal error</dd></dl>
+</li>
+</ul>
+<a name="reportError(org.apache.woden.ErrorLocator, java.lang.String, java.lang.String, short, java.lang.Exception)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reportError</h4>
+<pre>void&nbsp;reportError(<a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden">ErrorLocator</a>&nbsp;errLoc,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+               short&nbsp;severity,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;exception)
+                 throws <a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Report the message and the error location in the document according 
+ to the severity. Also report the exception that caused this error.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>errLoc</code> - ErrorLocator showing the location of the error in the document.</dd><dd><code>errorId</code> - String that identifies the message for this error.</dd><dd><code>message</code> - message text.</dd><dd><code>severity</code> - a short indicating warning, error or fatal error.</dd><dd><code>exception</code> - the Exception that caused this error</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code> - if the severity is fatal error</dd></dl>
+</li>
+</ul>
+<a name="setErrorHandler(org.apache.woden.ErrorHandler)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setErrorHandler</h4>
+<pre>void&nbsp;setErrorHandler(<a href="../../../org/apache/woden/ErrorHandler.html" title="interface in org.apache.woden">ErrorHandler</a>&nbsp;errorHandler)</pre>
+<div class="block">Set a custom error handler on this error reporter to replace the
+ default error handler.
+ 
+ TODO: identify all use cases for setting the error handler and determine how best to
+ expose this on the API. Currently, just via WSDLReader.setLocale which supports 
+ the 'read wsdl' use case, but others may include 'modify wsdl', 
+ 'create wsdl programmatically' and maybe 'write wsdl'.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>errorHandler</code> - the custom error handler</dd></dl>
+</li>
+</ul>
+<a name="getErrorHandler()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorHandler</h4>
+<pre><a href="../../../org/apache/woden/ErrorHandler.html" title="interface in org.apache.woden">ErrorHandler</a>&nbsp;getErrorHandler()</pre>
+<div class="block">Return the custom error handler if one has been set,  
+ otherwise return the default error handler.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the ErrorHandler used by this error reporter</dd></dl>
+</li>
+</ul>
+<a name="setLocale(java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLocale</h4>
+<pre>void&nbsp;setLocale(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block">Set the Locale used for localization of error messages.
+ 
+ TODO: identify all use cases for setting the locale and determine how best to
+ expose this on the API. Currently, just via WSDLReader.setLocale which supports 
+ the 'read wsdl' use case, but others may include 'modify wsdl', 
+ 'create wsdl programmatically' and maybe 'write wsdl'.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>locale</code> - the required locale</dd></dl>
+</li>
+</ul>
+<a name="getLocale()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocale</h4>
+<pre><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;getLocale()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the Locale used for localization of error messages.</dd></dl>
+</li>
+</ul>
+<a name="getFormattedMessage(java.lang.String, java.lang.Object[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getFormattedMessage</h4>
+<pre><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFormattedMessage(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorId,
+                         <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;arguments)</pre>
+<div class="block">Returns a formatted message string for the specified message key and arguments.
+ Used for formatting messages that will not be reported by the error reporter as
+ parsing errors (via the reportError method). Typically these types of messages 
+ will be for configuration or runtime errors that will be thrown as exceptions
+ by the caller.
+ If there are no message arguments, a null value may be specified for the 
+ <code>arguments</code> parameter instead of an empty array.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>errorId</code> - a String representing the message key</dd><dd><code>arguments</code> - an Object array of message parameters</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted message string</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ErrorReporter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../org/apache/woden/ErrorLocator.html" title="interface in org.apache.woden"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../org/apache/woden/SerializationStrategy.html" title="interface in org.apache.woden"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?org/apache/woden/ErrorReporter.html" target="_top">Frames</a></li>
+<li><a href="ErrorReporter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright ? <a href="http://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>
