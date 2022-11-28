@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>org.apache.woden.xml Class Hierarchy (Woden - dist API)</title>
-<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+<title>org.apache.woden.wsdl20.xml Class Hierarchy (Woden - dist API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="org.apache.woden.xml Class Hierarchy (Woden - dist API)";
+        parent.document.title="org.apache.woden.wsdl20.xml Class Hierarchy (Woden - dist API)";
     }
 //-->
 </script>
@@ -23,27 +23,27 @@
 <!--   -->
 </a>
 <ul class="navList" title="Navigation">
-<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li>Class</li>
 <li>Use</li>
 <li class="navBarCell1Rev">Tree</li>
-<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
-<li><a href="../../../../index-all.html">Index</a></li>
-<li><a href="../../../../help-doc.html">Help</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
 </ul>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/apache/woden/wsdl20/xml/package-tree.html">Prev</a></li>
-<li><a href="../../../../org/apache/woden/xpointer/package-tree.html">Next</a></li>
+<li><a href="../../../../../org/apache/woden/wsdl20/validation/package-tree.html">Prev</a></li>
+<li><a href="../../../../../org/apache/woden/xml/package-tree.html">Next</a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../index.html?org/apache/woden/xml/package-tree.html" target="_top">Frames</a></li>
+<li><a href="../../../../../index.html?org/apache/woden/wsdl20/xml/package-tree.html" target="_top">Frames</a></li>
 <li><a href="package-tree.html" target="_top">No Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
-<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
 </ul>
 <div>
 <script type="text/javascript"><!--
@@ -62,36 +62,109 @@
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <div class="header">
-<h1 class="title">Hierarchy For Package org.apache.woden.xml</h1>
+<h1 class="title">Hierarchy For Package org.apache.woden.wsdl20.xml</h1>
 <span class="strong">Package Hierarchies:</span>
 <ul class="horizontal">
-<li><a href="../../../../overview-tree.html">All Packages</a></li>
+<li><a href="../../../../../overview-tree.html">All Packages</a></li>
 </ul>
 </div>
 <div class="contentContainer">
-<h2 title="Class Hierarchy">Class Hierarchy</h2>
+<h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
-<li type="circle">java.lang.<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><span class="strong">Object</span></a>
+<li type="circle">org.apache.woden.wsdl20.extensions.<a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html" title="interface in org.apache.woden.wsdl20.extensions"><span class="strong">AttributeExtensible</span></a>
 <ul>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/UnknownAttr.html" title="class in org.apache.woden.xml"><span class="strong">UnknownAttr</span></a> (implements org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/WSDLElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">WSDLElement</span></a> (also extends org.apache.woden.wsdl20.extensions.<a href="../../../../../org/apache/woden/wsdl20/extensions/ElementExtensible.html" title="interface in org.apache.woden.wsdl20.extensions">ElementExtensible</a>)
+<ul>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">DocumentableElement</span></a>
+<ul>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DescriptionElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">DescriptionElement</span></a></li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/EndpointElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">EndpointElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ImportElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ImportElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/IncludeElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">IncludeElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ServiceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ServiceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/TypesElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">TypesElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+</ul>
+</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">NestedElement</span></a>
+<ul>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">DocumentationElement</span></a></li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/EndpointElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">EndpointElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ImportElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ImportElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/IncludeElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">IncludeElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ServiceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ServiceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/TypesElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">TypesElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
 </ul>
 </li>
 </ul>
-<h2 title="Interface Hierarchy">Interface Hierarchy</h2>
+</li>
+</ul>
+</li>
+<li type="circle">org.apache.woden.wsdl20.extensions.<a href="../../../../../org/apache/woden/wsdl20/extensions/ElementExtensible.html" title="interface in org.apache.woden.wsdl20.extensions"><span class="strong">ElementExtensible</span></a>
 <ul>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml"><span class="strong">XMLAttr</span></a>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/WSDLElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">WSDLElement</span></a> (also extends org.apache.woden.wsdl20.extensions.<a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html" title="interface in org.apache.woden.wsdl20.extensions">AttributeExtensible</a>)
 <ul>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/ArgumentArrayAttr.html" title="interface in org.apache.woden.xml"><span class="strong">ArgumentArrayAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/BooleanAttr.html" title="interface in org.apache.woden.xml"><span class="strong">BooleanAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/HTTPAuthenticationSchemeAttr.html" title="interface in org.apache.woden.xml"><span class="strong">HTTPAuthenticationSchemeAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/IntOrTokenAttr.html" title="interface in org.apache.woden.xml"><span class="strong">IntOrTokenAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/QNameAttr.html" title="interface in org.apache.woden.xml"><span class="strong">QNameAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/QNameListAttr.html" title="interface in org.apache.woden.xml"><span class="strong">QNameListAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/QNameListOrTokenAttr.html" title="interface in org.apache.woden.xml"><span class="strong">QNameListOrTokenAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/QNameOrTokenAttr.html" title="interface in org.apache.woden.xml"><span class="strong">QNameOrTokenAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/StringAttr.html" title="interface in org.apache.woden.xml"><span class="strong">StringAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/TokenAttr.html" title="interface in org.apache.woden.xml"><span class="strong">TokenAttr</span></a></li>
-<li type="circle">org.apache.woden.xml.<a href="../../../../org/apache/woden/xml/URIAttr.html" title="interface in org.apache.woden.xml"><span class="strong">URIAttr</span></a></li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">DocumentableElement</span></a>
+<ul>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DescriptionElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">DescriptionElement</span></a></li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/EndpointElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">EndpointElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ImportElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ImportElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/IncludeElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">IncludeElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ServiceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ServiceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/TypesElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">TypesElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>)</li>
+</ul>
+</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">NestedElement</span></a>
+<ul>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/BindingOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">BindingOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">DocumentationElement</span></a></li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/EndpointElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">EndpointElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ImportElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ImportElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/IncludeElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">IncludeElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceFaultReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceMessageReferenceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceOperationElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">InterfaceOperationElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/ServiceElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">ServiceElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+<li type="circle">org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/TypesElement.html" title="interface in org.apache.woden.wsdl20.xml"><span class="strong">TypesElement</span></a> (also extends org.apache.woden.wsdl20.xml.<a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -103,27 +176,27 @@
 <!--   -->
 </a>
 <ul class="navList" title="Navigation">
-<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li>Class</li>
 <li>Use</li>
 <li class="navBarCell1Rev">Tree</li>
-<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
-<li><a href="../../../../index-all.html">Index</a></li>
-<li><a href="../../../../help-doc.html">Help</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
 </ul>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/apache/woden/wsdl20/xml/package-tree.html">Prev</a></li>
-<li><a href="../../../../org/apache/woden/xpointer/package-tree.html">Next</a></li>
+<li><a href="../../../../../org/apache/woden/wsdl20/validation/package-tree.html">Prev</a></li>
+<li><a href="../../../../../org/apache/woden/xml/package-tree.html">Next</a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../index.html?org/apache/woden/xml/package-tree.html" target="_top">Frames</a></li>
+<li><a href="../../../../../index.html?org/apache/woden/wsdl20/xml/package-tree.html" target="_top">Frames</a></li>
 <li><a href="package-tree.html" target="_top">No Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
-<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
 </ul>
 <div>
 <script type="text/javascript"><!--

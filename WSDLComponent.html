@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>WSDLComponent (Woden - dist API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WSDLComponent (Woden - dist API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WSDLComponent.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/woden/wsdl20/TypeDefinition.html" title="interface in org.apache.woden.wsdl20"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/woden/wsdl20/WSDLComponent.html" target="_top">Frames</a></li>
+<li><a href="WSDLComponent.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.woden.wsdl20</div>
+<h2 title="Interface WSDLComponent" class="title">Interface WSDLComponent</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../../org/apache/woden/wsdl20/extensions/PropertyExtensible.html" title="interface in org.apache.woden.wsdl20.extensions">PropertyExtensible</a></dd>
+</dl>
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="../../../../org/apache/woden/wsdl20/Binding.html" title="interface in org.apache.woden.wsdl20">Binding</a>, <a href="../../../../org/apache/woden/wsdl20/BindingFault.html" title="interface in org.apache.woden.wsdl20">BindingFault</a>, <a href="../../../../org/apache/woden/wsdl20/BindingFaultReference.html" title="interface in org.apache.woden.wsdl20">BindingFaultReference</a>, <a href="../../../../org/apache/woden/wsdl20/BindingMessageReference.html" title="interface in org.apache.woden.wsdl20">BindingMessageReference</a>, <a href="../../../../org/apache/woden/wsdl20/BindingOperation.html" title="interface in org.apache.woden.wsdl20">BindingOperation</a>, <a href="../../../../org/apache/woden/wsdl20/Description.html" title="interface in org.apache.woden.wsdl20">Description</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdBinding.html" title="interface in org.apache.woden.wsdl20.editable">EdBinding</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdBindingFault.html" title="interface in org.apache.woden.wsdl20.editable">EdBindingFault</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdBindingFaultReference.html" title="interface in org.apache.woden.wsdl20.editable">EdBindingFaultReference</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdBindingMessageReference.html" title="interface in org.apache.woden.wsdl20.editable">EdBindingMessageReference</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdBindingOperation.html" title="interface in org.apache.woden.wsdl20.editable">EdBindingOperation</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdDescription.html" title="interface in org.apache.woden.wsdl20.editable">EdDescription</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdEndpoint.html" title="interface in org.apache.woden.wsdl20.editable">EdEndpoint</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdInterface.html" title="interface in org.apache.woden.wsdl20.editable">EdInterface</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdInterfaceFault.html" title="interface in org.apache.woden.wsdl20.editable">EdInterfaceFault</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdInterfaceFaultReference.html" title="interface in org.apache.woden.wsdl20.editable">EdInterfaceFaultReference</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdInterfaceMessageReference.html" title="interface in org.apache.woden.wsdl20.editable">EdInterfaceMessageReference</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdInterfaceOperation.html" title="interface in org.apache.woden.wsdl20.editable">EdInterfaceOperation</a>, <a href="../../../../org/apache/woden/wsdl20/editable/EdService.html" title="interface in org.apache.woden.wsdl20.editable">EdService</a>, <a href="../../../../org/apache/woden/wsdl20/Endpoint.html" title="interface in org.apache.woden.wsdl20">Endpoint</a>, <a href="../../../../org/apache/woden/wsdl20/Interface.html" title="interface in org.apache.woden.wsdl20">Interface</a>, <a href="../../../../org/apache/woden/wsdl20/InterfaceFault.html" title="interface in org.apache.woden.wsdl20">InterfaceFault</a>, <a href="../../../../org/apache/woden/wsdl20/InterfaceFaultReference.html" title="interface in org.apache.woden.wsdl20">InterfaceFaultReference</a>, <a href="../../../../org/apache/woden/wsdl20/InterfaceMessageReference.html" title="interface in org.apache.woden.wsdl20">InterfaceMessageReference</a>, <a href="../../../../org/apache/woden/wsdl20/InterfaceOperation.html" title="interface in org.apache.woden.wsdl20">InterfaceOperation</a>, <a href="../../../../org/apache/woden/wsdl20/NestedComponent.html" title="interface in org.apache.woden.wsdl20">NestedComponent</a>, <a href="../../../../org/apache/woden/wsdl20/Service.html" title="interface in org.apache.woden.wsdl20">Service</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">WSDLComponent</span>
+extends <a href="../../../../org/apache/woden/wsdl20/extensions/PropertyExtensible.html" title="interface in org.apache.woden.wsdl20.extensions">PropertyExtensible</a></pre>
+<div class="block">Represents the top-level super-type of all WSDL 2.0 Components. 
+ Every WSDL 2.0 Component interface must extend this interface, directly or indirectly.
+ It provides a common way to refer to any type of WSDL Component.
+ It defines behaviour common to all WSDL components, such as testing for 
+ equivalence and accessing extension properties.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>John Kaputin (jkaputin@apache.org)</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#equals(org.apache.woden.wsdl20.WSDLComponent)">equals</a></strong>(<a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html" title="interface in org.apache.woden.wsdl20">WSDLComponent</a>&nbsp;comp)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use isEquivalentTo(WSDLComponent)</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#getComponentExtensionContext(java.net.URI)">getComponentExtensionContext</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace)</code>
+<div class="block">Returns the ComponentExtensionContext object that provides access to this WSDL component's
+ extension properties from the specified namespace.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/woden/wsdl20/fragids/FragmentIdentifier.html" title="class in org.apache.woden.wsdl20.fragids">FragmentIdentifier</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#getFragmentIdentifier()">getFragmentIdentifier</a></strong>()</code>
+<div class="block">Returns the fragment identifier for this WSDL 2.0 component.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#isEquivalentTo(org.apache.woden.wsdl20.WSDLComponent)">isEquivalentTo</a></strong>(<a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html" title="interface in org.apache.woden.wsdl20">WSDLComponent</a>&nbsp;comp)</code>
+<div class="block">Tests whether this component is logically equivalent the specified component.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#setComponentExtensionContext(java.net.URI, org.apache.woden.wsdl20.extensions.ComponentExtensionContext)">setComponentExtensionContext</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace,
+                            <a href="../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&nbsp;compExtCtx)</code>
+<div class="block">Stores the ComponentExtensionContext object that provides access to this WSDL component's
+ extension properties from the specified namespace.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#toString()">toString</a></strong>()</code>
+<div class="block">Returns a String serialisation of the fragment identifier for this WSDL 2.0 component.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.woden.wsdl20.extensions.PropertyExtensible">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.woden.wsdl20.extensions.<a href="../../../../org/apache/woden/wsdl20/extensions/PropertyExtensible.html" title="interface in org.apache.woden.wsdl20.extensions">PropertyExtensible</a></h3>
+<code><a href="../../../../org/apache/woden/wsdl20/extensions/PropertyExtensible.html#getExtensionProperties()">getExtensionProperties</a>, <a href="../../../../org/apache/woden/wsdl20/extensions/PropertyExtensible.html#getExtensionProperties(java.net.URI)">getExtensionProperties</a>, <a href="../../../../org/apache/woden/wsdl20/extensions/PropertyExtensible.html#getExtensionProperty(java.net.URI, java.lang.String)">getExtensionProperty</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="isEquivalentTo(org.apache.woden.wsdl20.WSDLComponent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEquivalentTo</h4>
+<pre>boolean&nbsp;isEquivalentTo(<a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html" title="interface in org.apache.woden.wsdl20">WSDLComponent</a>&nbsp;comp)</pre>
+<div class="block">Tests whether this component is logically equivalent the specified component.
+ Equivalence is determined per spec WSDL 2.0 Part 1 Section 2.17 Equivalence
+ of Components.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>comp</code> - the WSDL component that this component will be compared to</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the components are logically equivalent</dd></dl>
+</li>
+</ul>
+<a name="equals(org.apache.woden.wsdl20.WSDLComponent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>boolean&nbsp;equals(<a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html" title="interface in org.apache.woden.wsdl20">WSDLComponent</a>&nbsp;comp)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use isEquivalentTo(WSDLComponent)</i></div>
+<div class="block">Tests whether this component is logically equivalent the specified component.
+ Equivalence is determined per spec WSDL 2.0 Part 1 Section 2.17 Equivalence
+ of Components.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>comp</code> - the WSDL component that this component will be compared to</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the components are logically equivalent</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/woden/wsdl20/WSDLComponent.html#isEquivalentTo(org.apache.woden.wsdl20.WSDLComponent)"><code>isEquivalentTo(WSDLComponent)</code></a></dd></dl>
+</li>
+</ul>
+<a name="setComponentExtensionContext(java.net.URI, org.apache.woden.wsdl20.extensions.ComponentExtensionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setComponentExtensionContext</h4>
+<pre>void&nbsp;setComponentExtensionContext(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace,
+                                <a href="../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&nbsp;compExtCtx)</pre>
+<div class="block">Stores the ComponentExtensionContext object that provides access to this WSDL component's
+ extension properties from the specified namespace.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>extNamespace</code> - the namespace URI of the extension properties</dd><dd><code>compExtCtx</code> - the ComponentExtensionContext object for accessing the extension properties</dd></dl>
+</li>
+</ul>
+<a name="getComponentExtensionContext(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getComponentExtensionContext</h4>
+<pre><a href="../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&nbsp;getComponentExtensionContext(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace)</pre>
+<div class="block">Returns the ComponentExtensionContext object that provides access to this WSDL component's
+ extension properties from the specified namespace.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>extNamespace</code> - the namespace URI of the extension properties</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the ComponentExtensionContext object for accessing the extension properties</dd></dl>
+</li>
+</ul>
+<a name="getFragmentIdentifier()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFragmentIdentifier</h4>
+<pre><a href="../../../../org/apache/woden/wsdl20/fragids/FragmentIdentifier.html" title="class in org.apache.woden.wsdl20.fragids">FragmentIdentifier</a>&nbsp;getFragmentIdentifier()</pre>
+<div class="block">Returns the fragment identifier for this WSDL 2.0 component.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a FragmentIdentifier for this WSDL 2.0 component.</dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Returns a String serialisation of the fragment identifier for this WSDL 2.0 component.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a String the serialisation of the fragment identifier for this WSDL 2.0 component.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WSDLComponent.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/woden/wsdl20/TypeDefinition.html" title="interface in org.apache.woden.wsdl20"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/woden/wsdl20/WSDLComponent.html" target="_top">Frames</a></li>
+<li><a href="WSDLComponent.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright ? <a href="http://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>
