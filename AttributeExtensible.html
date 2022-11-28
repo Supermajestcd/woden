@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>AttributeExtensible (Woden - dist API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AttributeExtensible (Woden - dist API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AttributeExtensible.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/woden/wsdl20/extensions/BaseComponentExtensionContext.html" title="class in org.apache.woden.wsdl20.extensions"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/woden/wsdl20/extensions/AttributeExtensible.html" target="_top">Frames</a></li>
+<li><a href="AttributeExtensible.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.woden.wsdl20.extensions</div>
+<h2 title="Interface AttributeExtensible" class="title">Interface AttributeExtensible</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="../../../../../org/apache/woden/wsdl20/xml/BindingElement.html" title="interface in org.apache.woden.wsdl20.xml">BindingElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultElement.html" title="interface in org.apache.woden.wsdl20.xml">BindingFaultElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/BindingFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml">BindingFaultReferenceElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/BindingMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml">BindingMessageReferenceElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/BindingOperationElement.html" title="interface in org.apache.woden.wsdl20.xml">BindingOperationElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/DescriptionElement.html" title="interface in org.apache.woden.wsdl20.xml">DescriptionElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/DocumentableElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentableElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/DocumentationElement.html" title="interface in org.apache.woden.wsdl20.xml">DocumentationElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/EndpointElement.html" title="interface in org.apache.woden.wsdl20.xml">EndpointElement</a>, <a href="../../../../../org/apache/woden/wsdl20/extensions/http/HTTPHeaderElement.html" title="interface in org.apache.woden.wsdl20.extensions.http">HTTPHeaderElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/ImportElement.html" title="interface in org.apache.woden.wsdl20.xml">ImportElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/IncludeElement.html" title="interface in org.apache.woden.wsdl20.xml">IncludeElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceElement.html" title="interface in org.apache.woden.wsdl20.xml">InterfaceElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultElement.html" title="interface in org.apache.woden.wsdl20.xml">InterfaceFaultElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceFaultReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml">InterfaceFaultReferenceElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceMessageReferenceElement.html" title="interface in org.apache.woden.wsdl20.xml">InterfaceMessageReferenceElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/InterfaceOperationElement.html" title="interface in org.apache.woden.wsdl20.xml">InterfaceOperationElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/NestedElement.html" title="interface in org.apache.woden.wsdl20.xml">NestedElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/ServiceElement.html" title="interface in org.apache.woden.wsdl20.xml">ServiceElement</a>, <a href="../../../../../org/apache/woden/wsdl20/extensions/soap/SOAPHeaderBlockElement.html" title="interface in org.apache.woden.wsdl20.extensions.soap">SOAPHeaderBlockElement</a>, <a href="../../../../../org/apache/woden/wsdl20/extensions/soap/SOAPModuleElement.html" title="interface in org.apache.woden.wsdl20.extensions.soap">SOAPModuleElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/TypesElement.html" title="interface in org.apache.woden.wsdl20.xml">TypesElement</a>, <a href="../../../../../org/apache/woden/wsdl20/xml/WSDLElement.html" title="interface in org.apache.woden.wsdl20.xml">WSDLElement</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">AttributeExtensible</span></pre>
+<div class="block">This interface represents elements that may contain extension attributes.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>jkaputin@apache.org</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html#getExtensionAttribute(javax.xml.namespace.QName)">getExtensionAttribute</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrType)</code>
+<div class="block">Return the extension attribute with this QName.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html#getExtensionAttributes()">getExtensionAttributes</a></strong>()</code>
+<div class="block">Return all extension attributes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html#getExtensionAttributesForNamespace(java.net.URI)">getExtensionAttributesForNamespace</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;namespace)</code>
+<div class="block">Return the extension attributes from this namespace.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html#hasExtensionAttributesForNamespace(java.net.URI)">hasExtensionAttributesForNamespace</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;namespace)</code>
+<div class="block">Return true if the implementor has extension attributes belonging to this namespace,
+ otherwise false.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html#setExtensionAttribute(javax.xml.namespace.QName, org.apache.woden.xml.XMLAttr)">setExtensionAttribute</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrType,
+                     <a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>&nbsp;attr)</code>
+<div class="block">Store the extension attribute object identified by the QName.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="setExtensionAttribute(javax.xml.namespace.QName, org.apache.woden.xml.XMLAttr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExtensionAttribute</h4>
+<pre>void&nbsp;setExtensionAttribute(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrType,
+                         <a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>&nbsp;attr)</pre>
+<div class="block">Store the extension attribute object identified by the QName.
+ If the attribute argument is null, remove the extension attribute identified
+ by the specified QName argument.
+ 
+ TODO ? @throws IllegalArgumentException if the QName is null</div>
+</li>
+</ul>
+<a name="getExtensionAttribute(javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtensionAttribute</h4>
+<pre><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>&nbsp;getExtensionAttribute(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrType)</pre>
+<div class="block">Return the extension attribute with this QName.</div>
+</li>
+</ul>
+<a name="getExtensionAttributesForNamespace(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtensionAttributesForNamespace</h4>
+<pre><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>[]&nbsp;getExtensionAttributesForNamespace(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;namespace)</pre>
+<div class="block">Return the extension attributes from this namespace.</div>
+</li>
+</ul>
+<a name="getExtensionAttributes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtensionAttributes</h4>
+<pre><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>[]&nbsp;getExtensionAttributes()</pre>
+<div class="block">Return all extension attributes.</div>
+</li>
+</ul>
+<a name="hasExtensionAttributesForNamespace(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>hasExtensionAttributesForNamespace</h4>
+<pre>boolean&nbsp;hasExtensionAttributesForNamespace(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;namespace)</pre>
+<div class="block">Return true if the implementor has extension attributes belonging to this namespace,
+ otherwise false.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AttributeExtensible.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/woden/wsdl20/extensions/BaseComponentExtensionContext.html" title="class in org.apache.woden.wsdl20.extensions"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/woden/wsdl20/extensions/AttributeExtensible.html" target="_top">Frames</a></li>
+<li><a href="AttributeExtensible.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright ? <a href="http://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

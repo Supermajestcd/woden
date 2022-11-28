@@ -1,0 +1,989 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ExtensionRegistry (Woden - dist API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ExtensionRegistry (Woden - dist API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ExtensionRegistry.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistrar.html" title="interface in org.apache.woden.wsdl20.extensions"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/woden/wsdl20/extensions/ExtensionRegistry.html" target="_top">Frames</a></li>
+<li><a href="ExtensionRegistry.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.woden.wsdl20.extensions</div>
+<h2 title="Class ExtensionRegistry" class="title">Class ExtensionRegistry</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.woden.wsdl20.extensions.ExtensionRegistry</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">ExtensionRegistry</span>
+extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">This class is used to associate serializers, deserializers, and
+ Java implementation types with extension elements.
+ It also associates Java implementation types only with extension attributes,
+ but not serializers and deserializers.
+ <p>
+ This class has been copied from WSDL4J and modified for Woden.
+ 
+ TODO update method javadocs.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Matthew J. Duftler (duftler@us.ibm.com), John Kaputin (jkaputin@apache.org)</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/apache/woden/wsdl20/validation/AssertionInfo.html" title="class in org.apache.woden.wsdl20.validation">AssertionInfo</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#assertionReg">assertionReg</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#compExtReg">compExtReg</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#defaultDeser">defaultDeser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#defaultSer">defaultSer</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#deserializerReg">deserializerReg</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#extAttributeReg">extAttributeReg</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#extElementReg">extElementReg</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#REGISTRAR_PROPERTY">REGISTRAR_PROPERTY</a></strong></code>
+<div class="block">The property containing the comma-separated listed of ExtensionRegistrars.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#serializerReg">serializerReg</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#ExtensionRegistry(org.apache.woden.ErrorReporter)">ExtensionRegistry</a></strong>(<a href="../../../../../org/apache/woden/ErrorReporter.html" title="interface in org.apache.woden">ErrorReporter</a>&nbsp;errorReporter)</code>
+<div class="block">Creates the extension registry, and sets the defaultSerializer
+ and defaultDeserializer properties to instances of an
+ UnknownExtensionSerializer, and an UnknownExtensionDeserializer,
+ respectively.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#createComponentExtension(java.lang.Class, org.apache.woden.wsdl20.WSDLComponent, java.net.URI)">createComponentExtension</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                        <a href="../../../../../org/apache/woden/wsdl20/WSDLComponent.html" title="interface in org.apache.woden.wsdl20">WSDLComponent</a>&nbsp;parentComp,
+                        <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace)</code>
+<div class="block">Return a ComponentExtensionContext object from the Java class registered for 
+ the specified extension namespace against the specified WSDL component class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#createExtAttribute(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.XMLElement, java.lang.String)">createExtAttribute</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;ownerClass,
+                  <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrQName,
+                  <a href="../../../../../org/apache/woden/XMLElement.html" title="interface in org.apache.woden">XMLElement</a>&nbsp;ownerElement,
+                  <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;attrValue)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionElement.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionElement</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#createExtElement(java.lang.Class, javax.xml.namespace.QName)">createExtElement</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType)</code>
+<div class="block">Create an instance of the type which was declared to be used to
+ represent extensibility elements with qnames matching elementQN,
+ when intended to exist as children of the specified parentType.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#getAllowableExtensions(java.lang.Class)">getAllowableExtensions</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType)</code>
+<div class="block">TODO make the return val typesafe, and create similar method for ext attrs.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#getDefaultDeserializer()">getDefaultDeserializer</a></strong>()</code>
+<div class="block">Get the deserializer to be used when none is found for an encountered
+ element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#getDefaultSerializer()">getDefaultSerializer</a></strong>()</code>
+<div class="block">Get the serializer to be used when none is found for an extensibility
+ element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/ErrorReporter.html" title="interface in org.apache.woden">ErrorReporter</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#getErrorReporter()">getErrorReporter</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/validation/AssertionInfo.html" title="class in org.apache.woden.wsdl20.validation">AssertionInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryAssertion(java.lang.String)">queryAssertion</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;assertionId)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/validation/AssertionInfo.html" title="class in org.apache.woden.wsdl20.validation">AssertionInfo</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryAssertions()">queryAssertions</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryComponentExtension(java.lang.Class, java.net.URI)">queryComponentExtension</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                       <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace)</code>
+<div class="block">Return the Java class that represents the extensions from the specified
+ namespace that extend the specified WSDL component class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryComponentExtensionNamespaces(java.lang.Class)">queryComponentExtensionNamespaces</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass)</code>
+<div class="block">Return the extension namespaces registered for the specified WSDL Component class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryDeserializer(java.lang.Class, javax.xml.namespace.QName)">queryDeserializer</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                 <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType)</code>
+<div class="block">Look up the deserializer for the extensibility element with the
+ qname elementQN, which was encountered as an immediate child
+ of the element represented by the specified parentType.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryExtAttributeType(java.lang.Class, javax.xml.namespace.QName)">queryExtAttributeType</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                     <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrQN)</code>
+<div class="block">Look up the type of the extensibility attribute with the specified qname,
+ which was defined on an element represented by the specified parent class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryExtElementType(java.lang.Class, javax.xml.namespace.QName)">queryExtElementType</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                   <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elemQN)</code>
+<div class="block">Look up the type of the extensibility element with the specified qname, which
+ was defined as a child of the element represented by the specified parent class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryResourceBundleNames()">queryResourceBundleNames</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#querySerializer(java.lang.Class, javax.xml.namespace.QName)">querySerializer</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+               <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType)</code>
+<div class="block">Look up the serializer to use for the extensibility element with
+ the qname elementQN, which was encountered as a child of the
+ specified parentType.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerAssertion(org.apache.woden.wsdl20.validation.Assertion, java.lang.Class)">registerAssertion</a></strong>(<a href="../../../../../org/apache/woden/wsdl20/validation/Assertion.html" title="interface in org.apache.woden.wsdl20.validation">Assertion</a>&nbsp;assertion,
+                 <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;targetClass)</code>
+<div class="block">Register an Assertion along with the target Class that the assertion applies to.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerComponentExtension(java.lang.Class, java.net.URI, java.lang.Class)">registerComponentExtension</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                          <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace,
+                          <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;compExtCtxClass)</code>
+<div class="block">Register the Java class which will represent extensions from a specified 
+ namespace that will extend the specified WSDL component class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerDeserializer(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.wsdl20.extensions.ExtensionDeserializer)">registerDeserializer</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                    <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType,
+                    <a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&nbsp;ed)</code>
+<div class="block">Declare that the specified deserializer should be used to deserialize
+ all extensibility elements with a qname matching elementQN, when
+ encountered as immediate children of the element represented by the
+ specified parentType.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerExtAttributeType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)">registerExtAttributeType</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;ownerClass,
+                        <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrQName,
+                        <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;attrClass)</code>
+<div class="block">Declare that the type of the specified extension attribute, when it occurs
+ as an attribute of the specified parent type, should be assumed to be
+ attrType.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerExtElementType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)">registerExtElementType</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                      <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType,
+                      <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;extensionType)</code>
+<div class="block">Declare that the specified extensionType is the concrete
+ class which should be used to represent extensibility elements
+ with qnames matching elementQN, that are intended to exist as
+ children of the specified parentType.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerResourceBundle(java.lang.String)">registerResourceBundle</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;resourceBundleName)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerSerializer(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.wsdl20.extensions.ExtensionSerializer)">registerSerializer</a></strong>(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                  <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType,
+                  <a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&nbsp;es)</code>
+<div class="block">Declare that the specified serializer should be used to serialize
+ all extensibility elements with a qname matching elementQN, when
+ encountered as children of the specified parentType.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#setDefaultDeserializer(org.apache.woden.wsdl20.extensions.ExtensionDeserializer)">setDefaultDeserializer</a></strong>(<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&nbsp;defaultDeser)</code>
+<div class="block">Set the deserializer to be used when none is found for an encountered
+ element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#setDefaultSerializer(org.apache.woden.wsdl20.extensions.ExtensionSerializer)">setDefaultSerializer</a></strong>(<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&nbsp;defaultSer)</code>
+<div class="block">Set the serializer to be used when none is found for an extensibility
+ element.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="REGISTRAR_PROPERTY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>REGISTRAR_PROPERTY</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> REGISTRAR_PROPERTY</pre>
+<div class="block">The property containing the comma-separated listed of ExtensionRegistrars.
+ The property name is <code>org.apache.woden.extensionregistrars</code>.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#org.apache.woden.wsdl20.extensions.ExtensionRegistry.REGISTRAR_PROPERTY">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="serializerReg">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializerReg</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&gt;&gt; serializerReg</pre>
+</li>
+</ul>
+<a name="deserializerReg">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deserializerReg</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&gt;&gt; deserializerReg</pre>
+</li>
+</ul>
+<a name="extElementReg">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extElementReg</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&gt;&gt; extElementReg</pre>
+</li>
+</ul>
+<a name="defaultSer">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultSer</h4>
+<pre>protected&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a> defaultSer</pre>
+</li>
+</ul>
+<a name="defaultDeser">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultDeser</h4>
+<pre>protected&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a> defaultDeser</pre>
+</li>
+</ul>
+<a name="extAttributeReg">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extAttributeReg</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&gt;&gt; extAttributeReg</pre>
+</li>
+</ul>
+<a name="compExtReg">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compExtReg</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>,<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&gt;&gt;&gt; compExtReg</pre>
+</li>
+</ul>
+<a name="assertionReg">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>assertionReg</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/apache/woden/wsdl20/validation/AssertionInfo.html" title="class in org.apache.woden.wsdl20.validation">AssertionInfo</a>&gt; assertionReg</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ExtensionRegistry(org.apache.woden.ErrorReporter)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ExtensionRegistry</h4>
+<pre>public&nbsp;ExtensionRegistry(<a href="../../../../../org/apache/woden/ErrorReporter.html" title="interface in org.apache.woden">ErrorReporter</a>&nbsp;errorReporter)</pre>
+<div class="block">Creates the extension registry, and sets the defaultSerializer
+ and defaultDeserializer properties to instances of an
+ UnknownExtensionSerializer, and an UnknownExtensionDeserializer,
+ respectively.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getErrorReporter()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorReporter</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/ErrorReporter.html" title="interface in org.apache.woden">ErrorReporter</a>&nbsp;getErrorReporter()</pre>
+</li>
+</ul>
+<a name="setDefaultSerializer(org.apache.woden.wsdl20.extensions.ExtensionSerializer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDefaultSerializer</h4>
+<pre>public&nbsp;void&nbsp;setDefaultSerializer(<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&nbsp;defaultSer)</pre>
+<div class="block">Set the serializer to be used when none is found for an extensibility
+ element. Set this to null to have an exception thrown when
+ unexpected extensibility elements are encountered. Default value is
+ an instance of UnknownExtensionSerializer.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/UnknownExtensionSerializer.html" title="class in org.apache.woden.wsdl20.extensions"><code>UnknownExtensionSerializer</code></a></dd></dl>
+</li>
+</ul>
+<a name="getDefaultSerializer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultSerializer</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&nbsp;getDefaultSerializer()</pre>
+<div class="block">Get the serializer to be used when none is found for an extensibility
+ element. Default value is an instance of UnknownExtensionSerializer.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/UnknownExtensionSerializer.html" title="class in org.apache.woden.wsdl20.extensions"><code>UnknownExtensionSerializer</code></a></dd></dl>
+</li>
+</ul>
+<a name="setDefaultDeserializer(org.apache.woden.wsdl20.extensions.ExtensionDeserializer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDefaultDeserializer</h4>
+<pre>public&nbsp;void&nbsp;setDefaultDeserializer(<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&nbsp;defaultDeser)</pre>
+<div class="block">Set the deserializer to be used when none is found for an encountered
+ element. Set this to null to have an exception thrown when
+ unexpected extensibility elements are encountered. Default value is
+ an instance of UnknownExtensionDeserializer.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/UnknownExtensionDeserializer.html" title="class in org.apache.woden.wsdl20.extensions"><code>UnknownExtensionDeserializer</code></a></dd></dl>
+</li>
+</ul>
+<a name="getDefaultDeserializer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultDeserializer</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&nbsp;getDefaultDeserializer()</pre>
+<div class="block">Get the deserializer to be used when none is found for an encountered
+ element. Default value is an instance of UnknownExtensionDeserializer.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/UnknownExtensionDeserializer.html" title="class in org.apache.woden.wsdl20.extensions"><code>UnknownExtensionDeserializer</code></a></dd></dl>
+</li>
+</ul>
+<a name="registerSerializer(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.wsdl20.extensions.ExtensionSerializer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerSerializer</h4>
+<pre>public&nbsp;void&nbsp;registerSerializer(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                      <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType,
+                      <a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&nbsp;es)</pre>
+<div class="block">Declare that the specified serializer should be used to serialize
+ all extensibility elements with a qname matching elementQN, when
+ encountered as children of the specified parentType.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentType</code> - a class object indicating where in the WSDL
+ definition this extension was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this extensibility element was found in the list of
+ extensibility elements belonging to a org.apache.woden.Binding.</dd><dd><code>elementType</code> - the qname of the extensibility element</dd><dd><code>es</code> - the extension serializer to use</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#querySerializer(java.lang.Class, javax.xml.namespace.QName)"><code>querySerializer(Class, QName)</code></a></dd></dl>
+</li>
+</ul>
+<a name="registerDeserializer(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.wsdl20.extensions.ExtensionDeserializer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerDeserializer</h4>
+<pre>public&nbsp;void&nbsp;registerDeserializer(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                        <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType,
+                        <a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&nbsp;ed)</pre>
+<div class="block">Declare that the specified deserializer should be used to deserialize
+ all extensibility elements with a qname matching elementQN, when
+ encountered as immediate children of the element represented by the
+ specified parentType.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentType</code> - a class object indicating where in the WSDL
+ document this extensibility element was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this element was encountered as an immediate child of
+ a &lt;wsdl:binding&gt; element.</dd><dd><code>elementType</code> - the qname of the extensibility element</dd><dd><code>ed</code> - the extension deserializer to use</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryDeserializer(java.lang.Class, javax.xml.namespace.QName)"><code>queryDeserializer(Class, QName)</code></a></dd></dl>
+</li>
+</ul>
+<a name="querySerializer(java.lang.Class, javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>querySerializer</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionSerializer</a>&nbsp;querySerializer(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                                  <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType)
+                                    throws <a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Look up the serializer to use for the extensibility element with
+ the qname elementQN, which was encountered as a child of the
+ specified parentType.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentType</code> - a class object indicating where in the WSDL
+ definition this extension was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this extensibility element was found in the list of
+ extensibility elements belonging to a org.apache.woden.Binding.</dd><dd><code>elementType</code> - the qname of the extensibility element</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the extension serializer, if one was found. If none was
+ found, the behavior depends on the value of the defaultSerializer
+ property. If the defaultSerializer property is set to a non-null
+ value, that value is returned; otherwise, a WSDLException is
+ thrown.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerSerializer(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.wsdl20.extensions.ExtensionSerializer)"><code>registerSerializer(Class, QName, ExtensionSerializer)</code></a>, 
+<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#setDefaultSerializer(org.apache.woden.wsdl20.extensions.ExtensionSerializer)"><code>setDefaultSerializer(ExtensionSerializer)</code></a></dd></dl>
+</li>
+</ul>
+<a name="queryDeserializer(java.lang.Class, javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryDeserializer</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionDeserializer.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionDeserializer</a>&nbsp;queryDeserializer(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                                      <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType)
+                                        throws <a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Look up the deserializer for the extensibility element with the
+ qname elementQN, which was encountered as an immediate child
+ of the element represented by the specified parentType.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentType</code> - a class object indicating where in the WSDL
+ document this extensibility element was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this element was encountered as an immediate child of
+ a &lt;wsdl:binding&gt; element.</dd><dd><code>elementType</code> - the qname of the extensibility element</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the extension deserializer, if one was found. If none was
+ found, the behavior depends on the value of the defaultDeserializer
+ property. If the defaultDeserializer property is set to a non-null
+ value, that value is returned; otherwise, a WSDLException is thrown.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerDeserializer(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.wsdl20.extensions.ExtensionDeserializer)"><code>registerDeserializer(Class, QName, ExtensionDeserializer)</code></a>, 
+<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#setDefaultDeserializer(org.apache.woden.wsdl20.extensions.ExtensionDeserializer)"><code>setDefaultDeserializer(ExtensionDeserializer)</code></a></dd></dl>
+</li>
+</ul>
+<a name="queryExtElementType(java.lang.Class, javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryExtElementType</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;queryExtElementType(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                        <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elemQN)</pre>
+<div class="block">Look up the type of the extensibility element with the specified qname, which
+ was defined as a child of the element represented by the specified parent class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentClass</code> - a class object indicating where in the WSDL
+ document this extensibility attribute was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this attribute was defined on a &lt;wsdl:binding> element.</dd><dd><code>elemQN</code> - the qname of the extensibility attribute</dd>
+<dt><span class="strong">Returns:</span></dt><dd>one of the constants defined on the AttributeExtensible class</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerExtAttributeType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)"><code>registerExtAttributeType(Class, QName, Class)</code></a>, 
+<a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html" title="interface in org.apache.woden.wsdl20.extensions"><code>AttributeExtensible</code></a></dd></dl>
+</li>
+</ul>
+<a name="getAllowableExtensions(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowableExtensions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&gt;&nbsp;getAllowableExtensions(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType)</pre>
+<div class="block">TODO make the return val typesafe, and create similar method for ext attrs.
+ 
+ Returns a set of QNames representing the extensibility elements
+ that are allowed as children of the specified parent type.
+ Basically, this method returns the keys associated with the set
+ of extension deserializers registered for this parent type.
+ Returns null if no extension deserializers are registered for
+ this parent type.</div>
+</li>
+</ul>
+<a name="registerExtElementType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerExtElementType</h4>
+<pre>public&nbsp;void&nbsp;registerExtElementType(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                          <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType,
+                          <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;extensionType)</pre>
+<div class="block">Declare that the specified extensionType is the concrete
+ class which should be used to represent extensibility elements
+ with qnames matching elementQN, that are intended to exist as
+ children of the specified parentType.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentType</code> - a class object indicating where in the WSDL
+ definition this extension would exist. For example,
+ org.apache.woden.Binding.class would be used to indicate
+ this extensibility element would be added to the list of
+ extensibility elements belonging to a org.apache.woden.Binding,
+ after being instantiated.</dd><dd><code>elementType</code> - the qname of the extensibility element</dd><dd><code>extensionType</code> - the concrete class which should be instantiated</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#createExtElement(java.lang.Class, javax.xml.namespace.QName)"><code>createExtElement(Class, QName)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createExtElement(java.lang.Class, javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createExtElement</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionElement.html" title="interface in org.apache.woden.wsdl20.extensions">ExtensionElement</a>&nbsp;createExtElement(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentType,
+                                <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;elementType)
+                                  throws <a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Create an instance of the type which was declared to be used to
+ represent extensibility elements with qnames matching elementQN,
+ when intended to exist as children of the specified parentType.
+ This method allows a user to instantiate an extensibility element
+ without having to know the implementing type.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentType</code> - a class object indicating where in the WSDL
+ definition this extension will exist. For example,
+ org.apache.woden.Binding.class would be used to indicate
+ this extensibility element is going to be added to the list of
+ extensibility elements belonging to a org.apache.woden.Binding,
+ after being instantiated.</dd><dd><code>elementType</code> - the qname of the extensibility element</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new instance of the type used to represent the
+ specified extension</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerExtElementType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)"><code>registerExtElementType(Class, QName, Class)</code></a></dd></dl>
+</li>
+</ul>
+<a name="registerExtAttributeType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerExtAttributeType</h4>
+<pre>public&nbsp;void&nbsp;registerExtAttributeType(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;ownerClass,
+                            <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrQName,
+                            <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;attrClass)</pre>
+<div class="block">Declare that the type of the specified extension attribute, when it occurs
+ as an attribute of the specified parent type, should be assumed to be
+ attrType.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ownerClass</code> - a class object indicating where in the WSDL
+ document this extensibility attribute was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this attribute was defined on a &lt;wsdl:binding> element.</dd><dd><code>attrQName</code> - the qname of the extensibility attribute</dd><dd><code>attrClass</code> - one of the constants defined on the AttributeExtensible
+ class</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#queryExtAttributeType(java.lang.Class, javax.xml.namespace.QName)"><code>queryExtAttributeType(Class, QName)</code></a>, 
+<a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html" title="interface in org.apache.woden.wsdl20.extensions"><code>AttributeExtensible</code></a></dd></dl>
+</li>
+</ul>
+<a name="queryExtAttributeType(java.lang.Class, javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryExtAttributeType</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>&gt;&nbsp;queryExtAttributeType(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                                   <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrQN)</pre>
+<div class="block">Look up the type of the extensibility attribute with the specified qname,
+ which was defined on an element represented by the specified parent class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentClass</code> - a class object indicating where in the WSDL
+ document this extensibility attribute was encountered. For
+ example, org.apache.woden.Binding.class would be used to indicate
+ this attribute was defined on a &lt;wsdl:binding> element.</dd><dd><code>attrQN</code> - the qname of the extensibility attribute</dd>
+<dt><span class="strong">Returns:</span></dt><dd>one of the constants defined on the AttributeExtensible class</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistry.html#registerExtAttributeType(java.lang.Class, javax.xml.namespace.QName, java.lang.Class)"><code>registerExtAttributeType(Class, QName, Class)</code></a>, 
+<a href="../../../../../org/apache/woden/wsdl20/extensions/AttributeExtensible.html" title="interface in org.apache.woden.wsdl20.extensions"><code>AttributeExtensible</code></a></dd></dl>
+</li>
+</ul>
+<a name="createExtAttribute(java.lang.Class, javax.xml.namespace.QName, org.apache.woden.XMLElement, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createExtAttribute</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/xml/XMLAttr.html" title="interface in org.apache.woden.xml">XMLAttr</a>&nbsp;createExtAttribute(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;ownerClass,
+                         <a href="http://docs.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attrQName,
+                         <a href="../../../../../org/apache/woden/XMLElement.html" title="interface in org.apache.woden">XMLElement</a>&nbsp;ownerElement,
+                         <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;attrValue)
+                           throws <a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code></dd></dl>
+</li>
+</ul>
+<a name="registerComponentExtension(java.lang.Class, java.net.URI, java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerComponentExtension</h4>
+<pre>public&nbsp;void&nbsp;registerComponentExtension(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                              <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace,
+                              <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;compExtCtxClass)</pre>
+<div class="block">Register the Java class which will represent extensions from a specified 
+ namespace that will extend the specified WSDL component class.
+ The Java class must implement <code>ComponentExtensionContext</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentClass</code> - the WSDL component class</dd><dd><code>extNamespace</code> - the extension namespace</dd><dd><code>compExtCtxClass</code> - the Java class representing these extensions</dd></dl>
+</li>
+</ul>
+<a name="queryComponentExtension(java.lang.Class, java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryComponentExtension</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&gt;&nbsp;queryComponentExtension(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                                                       <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace)</pre>
+<div class="block">Return the Java class that represents the extensions from the specified
+ namespace that extend the specified WSDL component class.
+ This class will be an implementation of <code>ComponentExtensionContext</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentClass</code> - the WSDL component</dd><dd><code>extNamespace</code> - the extension namespace</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the Class of the component extensions</dd></dl>
+</li>
+</ul>
+<a name="queryComponentExtensionNamespaces(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryComponentExtensionNamespaces</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>[]&nbsp;queryComponentExtensionNamespaces(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass)</pre>
+<div class="block">Return the extension namespaces registered for the specified WSDL Component class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentClass</code> - the class of WSDL component extended by these namespaces</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an array of namespace URIs</dd></dl>
+</li>
+</ul>
+<a name="createComponentExtension(java.lang.Class, org.apache.woden.wsdl20.WSDLComponent, java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createComponentExtension</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/extensions/ComponentExtensionContext.html" title="interface in org.apache.woden.wsdl20.extensions">ComponentExtensionContext</a>&nbsp;createComponentExtension(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;parentClass,
+                                                 <a href="../../../../../org/apache/woden/wsdl20/WSDLComponent.html" title="interface in org.apache.woden.wsdl20">WSDLComponent</a>&nbsp;parentComp,
+                                                 <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;extNamespace)
+                                                   throws <a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></pre>
+<div class="block">Return a ComponentExtensionContext object from the Java class registered for 
+ the specified extension namespace against the specified WSDL component class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parentClass</code> - the WSDL component class.</dd><dd><code>extNamespace</code> - the extension namespace.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>ComponentExtensionContext</code> object</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/woden/WSDLException.html" title="class in org.apache.woden">WSDLException</a></code> - if no Java class is registered for this namespace and WSDL component.</dd></dl>
+</li>
+</ul>
+<a name="registerResourceBundle(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerResourceBundle</h4>
+<pre>public&nbsp;void&nbsp;registerResourceBundle(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;resourceBundleName)</pre>
+</li>
+</ul>
+<a name="queryResourceBundleNames()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryResourceBundleNames</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;queryResourceBundleNames()</pre>
+</li>
+</ul>
+<a name="registerAssertion(org.apache.woden.wsdl20.validation.Assertion, java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerAssertion</h4>
+<pre>public&nbsp;void&nbsp;registerAssertion(<a href="../../../../../org/apache/woden/wsdl20/validation/Assertion.html" title="interface in org.apache.woden.wsdl20.validation">Assertion</a>&nbsp;assertion,
+                     <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;targetClass)</pre>
+<div class="block">Register an Assertion along with the target Class that the assertion applies to.
+ TODO assertion dependencies.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>assertion</code> - an Assertion object representing the assertion to be registered.</dd><dd><code>targetClass</code> - the Class representing the component in the WSDL that the assertion applies to.</dd></dl>
+</li>
+</ul>
+<a name="queryAssertion(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryAssertion</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/validation/AssertionInfo.html" title="class in org.apache.woden.wsdl20.validation">AssertionInfo</a>&nbsp;queryAssertion(<a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;assertionId)</pre>
+</li>
+</ul>
+<a name="queryAssertions()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>queryAssertions</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/woden/wsdl20/validation/AssertionInfo.html" title="class in org.apache.woden.wsdl20.validation">AssertionInfo</a>[]&nbsp;queryAssertions()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ExtensionRegistry.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionRegistrar.html" title="interface in org.apache.woden.wsdl20.extensions"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/woden/wsdl20/extensions/ExtensionSerializer.html" title="interface in org.apache.woden.wsdl20.extensions"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/woden/wsdl20/extensions/ExtensionRegistry.html" target="_top">Frames</a></li>
+<li><a href="ExtensionRegistry.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright ? <a href="http://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>
